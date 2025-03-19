@@ -13,7 +13,7 @@ export default function Navbar({
   const pathname = usePathname();
   return (
     <nav className={styles.wrapper}>
-      <Flex>
+      <Flex direction="row">
         {items.map((item, i) => (
           <Link
             key={i}

@@ -1,4 +1,4 @@
-import React, { Children, PropsWithChildren } from "react";
+import React, { PropsWithChildren } from "react";
 import styles from "./section.module.css";
 
 export default function Grid({

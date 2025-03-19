@@ -18,6 +18,8 @@ export default function ScrollListener({
   const ref = useRef<HTMLDivElement | null>(null);
 
   const handleScroll = () => {
+    console.log(window.scrollY);
+    
     // get the dimensions of the ref element
     const offsetTop = ref.current?.offsetTop || 0;
     const offsetHeight = ref.current?.offsetHeight || 0;

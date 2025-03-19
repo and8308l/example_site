@@ -47,7 +47,7 @@ export default function Circles({
               key={i}
               className={styles.circle}
               style={{
-                ["--scale" as any]: i * 1 + 1,
+                ["--scale" as string]: i * 1 + 1,
                 opacity: calcProgress(startPoints[i], endPoints[i], percentage),
                 transform: `${
                   i != amount - 1 ? "translate(-50%, -50%)" : ""

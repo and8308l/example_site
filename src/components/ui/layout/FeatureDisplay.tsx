@@ -1,10 +1,5 @@
 import Grid from "@/components/wrappers/layout/Grid";
-import React, {
-  cloneElement,
-  ComponentType,
-  ReactElement,
-  ReactNode,
-} from "react";
+import React, { cloneElement, ReactElement } from "react";
 import Tile from "../feature/tile/Tile";
 import Heading from "../typography/Heading";
 
@@ -24,7 +19,9 @@ export default function FeatureDisplay({
   fullScreen?: boolean;
 }) {
   return (
-    <section className={fullScreen ? "h-screen flex flex-col justify-center" : "mb-5"}>
+    <section
+      className={fullScreen ? "h-screen flex flex-col justify-center" : "mb-5"}
+    >
       {title && (
         <Grid columns={2}>
           <Heading>{title}</Heading>

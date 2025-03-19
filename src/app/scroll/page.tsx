@@ -11,9 +11,9 @@ export default function page() {
       <TitleDisplay title="Swipe">
         <p>
           The following examples showcase the ScrollListener wrapper which
-          calculates the midpoint of its child element and it's position within
+          calculates the midpoint of its child element and it&apos;s position within
           the defined window region. The scroll listener is only firing when the
-          element is "on screen" by utilising the IntersectionObserver.
+          element is &quot;on screen&quot; by utilising the IntersectionObserver.
         </p>
         <p>
           For each of these examples, the designed element can be interchangable

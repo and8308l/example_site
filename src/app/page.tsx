@@ -3,7 +3,6 @@ import Heading from "@/components/ui/typography/Heading";
 import HorizontalSwipe from "@/components/wrappers/animated/HorizontalSwipe";
 import VerticalSwipe from "@/components/wrappers/animated/VerticalSwipe";
 import Grid from "@/components/wrappers/layout/Grid";
-import Link from "next/link";
 
 export default function Home() {
   return (
