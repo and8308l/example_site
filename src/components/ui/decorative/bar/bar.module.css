@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+}
+
+.horizontal .bar {
+  width: 350px;
+  height: 75px;
+}
+
+.vertical .bar {
+  width: 75px;
+  height: 350px;
+}
+
+.bar {
+  border-radius: 24px;
+  background-color: black;
+}
+
+.bar:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+}

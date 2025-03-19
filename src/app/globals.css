@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --nav_height: 80px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +18,22 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  padding-top: var(--nav_height);
+  scroll-padding-top: var(--nav_height);
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  background-color: var(--background);
+}
+
+p,
+ul {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1.15rem;
 }

@@ -1,0 +1,8 @@
+.wrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 576px;
+  max-height: 432px;
+  object-fit: cover;
+  object-position: center;
+}
