@@ -6,7 +6,7 @@ export default function Tile({ image }: { image: string }) {
   return (
     <Image
       src={image}
-      alt=""
+      alt="Example alt text"
       width={576}
       height={432}
       className={styles.wrapper}

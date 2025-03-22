@@ -10,7 +10,7 @@ export default function TitleDisplay({
     <div className="pt-[20%] pb-[15%]">
       <Flex direction="col">
         <Heading size="lrg">{title}</Heading>
-        <div className="w-2/3">{children}</div>
+        <div className="md:w-2/3">{children}</div>
       </Flex>
     </div>
   );

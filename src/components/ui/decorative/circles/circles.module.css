@@ -1,18 +1,40 @@
 .wrapper {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .circle {
-  border: 2px solid blue;
-  width: calc(25px * var(--scale));
-  height: calc(25px * var(--scale));
+  --scale: calc(var(--progress) * 0.2 + 0.8);
+  width: calc(20px * var(--child));
+  height: calc(20px * var(--child));
+  border: 2px solid var(--primary);
   border-radius: 50%;
+  opacity: var(--progress);
+  -webkit-transform: scale(var(--scale));
+  -ms-transform: scale(var(--scale));
+  transform: scale(var(--scale));
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
   transform-origin: center;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .circle:not(:last-child) {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(var(--scale));
+  -ms-transform: translate(-50%, -50%) scale(var(--scale));
+  transform: translate(-50%, -50%) scale(var(--scale));
+}
+
+@media (min-width: 768px) {
+  .circle {
+    width: calc(25px * var(--child));
+    height: calc(25px * var(--child));
+  }
 }

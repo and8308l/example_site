@@ -1,15 +1,28 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import styles from "./section.module.css";
+import { GridProps } from "@/constants/props";
 
 export default function Grid({
   columns,
+  justify = "start",
+  align = "start",
   children,
-}: { columns: number } & PropsWithChildren) {
+}: GridProps) {
   return (
     <div className={`w-screen ${styles.wrapper}`}>
       <div
-        className={`w-screen flex flex-col sm:grid ${styles.limit_width}`}
-        style={{ gridTemplateColumns: `repeat(${columns}, 1fr)`, gap: "2rem" }}
+        className={`w-screen ${styles.layout} grid ${styles.grid}  ${
+          (justify == "start" && "justify-items-start") ||
+          (justify == "center" && "justify-items-center") ||
+          (justify == "end" && "justify-items-end") ||
+          ""
+        } ${
+          (align == "start" && "items-start") ||
+          (align == "center" && "items-center") ||
+          (align == "end" && "items-end") ||
+          ""
+        } ${styles.limit_width}`}
+        style={{ ["--columns" as string]: columns }}
       >
         {children}
       </div>

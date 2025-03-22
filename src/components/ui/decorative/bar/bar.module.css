@@ -2,24 +2,40 @@
   position: relative;
 }
 
-.horizontal .bar {
-  width: 350px;
-  height: 75px;
-}
-
-.vertical .bar {
-  width: 75px;
-  height: 350px;
-}
-
 .bar {
-  border-radius: 24px;
-  background-color: black;
+  border-radius: var(--radius);
+  background-color: var(--secondary);
 }
 
 .bar:last-child {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: red;
+  background-color: var(--primary);
+}
+
+.x .bar {
+  width: 200px;
+  height: 50px;
+  -webkit-clip-path: inset(0% 0% 0% calc(var(--progress) * 100%));
+  clip-path: inset(0% 0% 0% calc(var(--progress) * 100%));
+}
+
+.y .bar {
+  width: 50px;
+  height: 200px;
+  -webkit-clip-path: inset(0% 0% calc(var(--progress) * 100%) 0%);
+  clip-path: inset(0% 0% calc(var(--progress) * 100%) 0%);
+}
+
+@media (min-width: 768px) {
+  .x .bar {
+    width: 350px;
+    height: 75px;
+  }
+
+  .y .bar {
+    width: 75px;
+    height: 350px;
+  }
 }

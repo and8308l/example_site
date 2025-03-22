@@ -2,13 +2,18 @@ import FeatureDisplay from "@/components/ui/layout/FeatureDisplay";
 import TitleDisplay from "@/components/ui/layout/TitleDisplay";
 import HorizontalSwipe from "@/components/wrappers/animated/HorizontalSwipe";
 import VerticalSwipe from "@/components/wrappers/animated/VerticalSwipe";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Swipe",
+};
 
 const imageSrc = "/images/ferns.jpg";
 export default function page() {
   return (
     <main>
-      <TitleDisplay title="Swipe">
+      <TitleDisplay title={metadata.title as string}>
         <p>
           The following examples showcase the two Swipe wrappers which utilises
           an IntersectionObserver to detect a child elements entry and exit of

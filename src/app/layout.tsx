@@ -9,7 +9,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Example Site",
+  title: {
+    template: "%s | Example Site",
+    default: "Example Site",
+  },
   description: "",
   robots: {
     index: false,
@@ -28,9 +31,9 @@ export default function RootLayout({
         <Navbar
           items={[
             { label: "Home", path: "/" },
-            { label: "Fade", path: "/fade" },
-            { label: "Swipe", path: "/swipe" },
-            { label: "Scroll", path: "/scroll" },
+            { label: "Fade", path: "/showcase/fade" },
+            { label: "Swipe", path: "/showcase/swipe" },
+            { label: "Scroll", path: "/showcase/scroll" },
           ]}
         />
         {children}

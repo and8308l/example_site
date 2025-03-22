@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffffa;
+  --foreground: #000103;
+  --primary: #68776d;
+  --secondary: #ff751f;
+  --tertiary: #80807f;
+  --radius: 8px;
   --nav_height: 80px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000103;
+    --foreground: #fffffa;
   }
 }
 
@@ -30,10 +34,17 @@ section {
 
 p,
 ul {
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   margin-bottom: 1rem;
 }
 
 ul {
   margin-left: 1.15rem;
+}
+
+@media (min-width: 768px) {
+  p,
+  ul {
+    font-size: 1.15rem;
+  }
 }

@@ -1,18 +1,18 @@
 "use client";
 
 import React from "react";
-import Observer from "../Observer";
 import animated from "./animated.module.css";
 import { YDirection } from "@/constants/types";
 import { handleEntry, handleExit } from "@/utils/handlers";
-import { SwipeProps } from "@/constants/props";
+import { HorzontalSwipeProps } from "@/constants/props";
+import Observer from "../listeners/Observer";
 
 export default function HorizontalSwipe({
   animation = 1,
   speed = "med",
   delay = 0,
   children,
-}: SwipeProps) {
+}: HorzontalSwipeProps) {
   const handleClasses = (e: Element, d: YDirection) => {
     if (
       animation === 1 ||

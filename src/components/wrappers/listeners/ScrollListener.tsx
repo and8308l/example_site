@@ -1,6 +1,10 @@
 "use client";
 
-import React, { PropsWithChildren, useRef } from "react";
+import React, {
+  PropsWithChildren,
+  useLayoutEffect,
+  useRef,
+} from "react";
 import Observer from "./Observer";
 
 interface ScrollListenerProps extends PropsWithChildren {
@@ -17,9 +21,11 @@ export default function ScrollListener({
 }: ScrollListenerProps) {
   const ref = useRef<HTMLDivElement | null>(null);
 
+  useLayoutEffect(() => {
+    handleScroll();
+  });
+
   const handleScroll = () => {
-    console.log(window.scrollY);
-    
     // get the dimensions of the ref element
     const offsetTop = ref.current?.offsetTop || 0;
     const offsetHeight = ref.current?.offsetHeight || 0;

@@ -3,17 +3,23 @@ import Circles from "@/components/ui/decorative/circles/Circles";
 import Spirograph from "@/components/ui/decorative/spirograph/Spirograph";
 import DescriptionDisplay from "@/components/ui/layout/DescriptionDisplay";
 import TitleDisplay from "@/components/ui/layout/TitleDisplay";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Scroll",
+};
 
 export default function page() {
   return (
     <main>
-      <TitleDisplay title="Swipe">
+      <TitleDisplay title={metadata.title as string}>
         <p>
           The following examples showcase the ScrollListener wrapper which
-          calculates the midpoint of its child element and it&apos;s position within
-          the defined window region. The scroll listener is only firing when the
-          element is &quot;on screen&quot; by utilising the IntersectionObserver.
+          calculates the midpoint of its child element and it&apos;s position
+          within the defined window region. The scroll listener is only firing
+          when the element is &quot;on screen&quot; by utilising the
+          IntersectionObserver.
         </p>
         <p>
           For each of these examples, the designed element can be interchangable
@@ -27,18 +33,17 @@ export default function page() {
       <DescriptionDisplay
         description="This element starts its transition 10% from the bottom edge of the screen & completes it's transition 25% from the top edge of the screen."
         featureComponent={() => (
-          <Spirograph amount={9} animationOverlap={0.5} size={300} />
+          <Spirograph amount={9} animationOverlap={0.5} />
         )}
       />
       <DescriptionDisplay
         description={`This element starts its transition 30% from the bottom edge of the screen & completes it's transition 30% from the top edge of the screen, and "reveals" an underlying version using a vertical inset.`}
-        featureComponent={() => <Bar direction="vertical" />}
+        featureComponent={() => <Bar axis="y" />}
       />
       <DescriptionDisplay
         description={`This element starts its transition 30% from the bottom edge of the screen & completes it's transition 30% from the top edge of the screen, and "reveals" an underlying version using a horizontal inset.`}
-        featureComponent={() => <Bar direction="horizontal" />}
+        featureComponent={() => <Bar axis="x" />}
       />
-      <div className="h-screen"></div>
     </main>
   );
 }

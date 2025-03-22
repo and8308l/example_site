@@ -19,8 +19,10 @@ export default function FeatureDisplay({
   fullScreen?: boolean;
 }) {
   return (
-    <section
-      className={fullScreen ? "h-screen flex flex-col justify-center" : "mb-5"}
+    <div
+      className={
+        fullScreen ? "min-h-screen flex flex-col justify-center" : "mb-9"
+      }
     >
       {title && (
         <Grid columns={2}>
@@ -43,6 +45,6 @@ export default function FeatureDisplay({
           );
         })}
       </Grid>
-    </section>
+    </div>
   );
 }

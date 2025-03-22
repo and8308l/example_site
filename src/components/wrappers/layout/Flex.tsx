@@ -1,13 +1,29 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import styles from "./section.module.css";
+import { FlexProps } from "@/constants/props";
 
 export default function Flex({
-  direction = "row",
+  direction,
+  justify = "start",
+  align = "start",
   children,
-}: { direction: "col" | "row" } & PropsWithChildren) {
+}: FlexProps) {
   return (
     <div className={`w-screen ${styles.wrapper}`}>
-      <div className={`flex flex-${direction} ${styles.limit_width}`}>
+      <div
+        className={`flex flex-${direction} ${
+          (justify == "start" && "justify-start") ||
+          (justify == "center" && "justify-center") ||
+          (justify == "end" && "justify-end") ||
+          (justify == "between" && "justify-between") ||
+          (justify == "around" && "justify-around") ||
+          (justify == "evenly" && "justify-evenly")
+        } ${
+          (align == "start" && "items-start") ||
+          (align == "center" && "items-center") ||
+          (align == "end" && "items-end")
+        } ${styles.limit_width}`}
+      >
         {children}
       </div>
     </div>

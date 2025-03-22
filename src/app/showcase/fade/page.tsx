@@ -1,14 +1,19 @@
 import FeatureDisplay from "@/components/ui/layout/FeatureDisplay";
 import TitleDisplay from "@/components/ui/layout/TitleDisplay";
 import Fade from "@/components/wrappers/animated/Fade";
+import { Metadata } from "next";
 import React from "react";
 
 const imageSrc = "/images/barn.jpg";
 
+export const metadata: Metadata = {
+  title: "Fade",
+};
+
 export default function page() {
   return (
     <main>
-      <TitleDisplay title="Fade">
+      <TitleDisplay title={metadata.title as string}>
         <p>
           The following examples showcase the Fade wrapper which utilises an
           IntersectionObserver to detect a child elements entry and exit of the

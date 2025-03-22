@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import Observer from "../Observer";
 import animated from "./animated.module.css";
 import { FadeProps } from "@/constants/props";
+import Observer from "../listeners/Observer";
 
 export default function Fade({
   speed = "med",

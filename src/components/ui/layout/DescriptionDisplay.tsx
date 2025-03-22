@@ -9,12 +9,10 @@ export default function DescriptionDisplay({
   featureComponent: () => ReactElement;
 }) {
   return (
-    <div className="py-9">
-      <Grid columns={3}>
+    <div className="pt-[5%] pb-[10%]">
+      <Grid columns={3} align="center" justify="center">
         <p>{description}</p>
-        <div className="flex justify-center align-center">
-          {cloneElement(featureComponent())}
-        </div>
+        {cloneElement(featureComponent())}
       </Grid>
     </div>
   );

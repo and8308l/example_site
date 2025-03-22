@@ -1,17 +1,17 @@
 "use client";
 
 import React from "react";
-import Observer from "../Observer";
 import { YDirection } from "@/constants/types";
 import animated from "./animated.module.css";
 import { handleEntry, handleExit } from "@/utils/handlers";
-import { SwipeProps } from "@/constants/props";
+import { TransitionProps } from "@/constants/props";
+import Observer from "../listeners/Observer";
 
 export default function VerticalSwipe({
   speed = "med",
   delay = 0,
   children,
-}: SwipeProps) {
+}: TransitionProps) {
   const handleClasses = (e: Element, d: YDirection) => {
     if (d === "top") {
       e.classList.add(animated.offset_top);

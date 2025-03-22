@@ -5,13 +5,27 @@
 }
 
 .heading_sml {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
 }
 
 .heading_med {
-  font-size: 3.75rem;
+  font-size: 2.25rem;
 }
 
 .heading_lrg {
-  font-size: 6rem;
+  font-size: 3.75rem;
+}
+
+@media (min-width: 768px) {
+  .heading_sml {
+    font-size: 2.25rem;
+  }
+
+  .heading_med {
+    font-size: 3.75rem;
+  }
+
+  .heading_lrg {
+    font-size: 6rem;
+  }
 }

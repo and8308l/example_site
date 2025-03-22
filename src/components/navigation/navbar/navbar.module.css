@@ -3,20 +3,32 @@
   width: 100%;
   top: 0;
   height: var(--nav_height);
-  background: #68776d;
+  background: var(--primary);
   z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  gap: 0.5rem;
   color: var(--background);
+  font-size: 0.95rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
-  gap: 1rem;
-  font-size: 1.15rem;
 }
 
 .link.active {
@@ -30,11 +42,25 @@
   width: 0px;
   height: 0px;
   background: var(--background);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .link.active::before,
 .link.active::after {
-  width: 24px;
+  width: 12px;
   height: 2px;
+}
+
+@media (min-width: 768px) {
+  .link {
+    gap: 1rem;
+    font-size: 1.15rem;
+  }
+
+  .link.active::before,
+  .link.active::after {
+    width: 24px;
+  }
 }

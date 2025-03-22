@@ -1,15 +1,30 @@
 .speed_med {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
 
 .speed_fast {
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -ms-transition: 0.75s;
+  -o-transition: 0.75s;
   transition: 0.75s;
+  -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
 }
 
 .speed_x_fast {
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
   transition: 0.35s;
+  -webkit-animation-duration: 0.35s;
   animation-duration: 0.35s;
 }
 
@@ -19,45 +34,67 @@
 
 .wrapper.on_screen {
   opacity: 1;
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
   transform: translateX(0%);
 }
 
 .offset_top {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .offset_bottom {
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
   transform: translateY(50%);
 }
 
 .offset_left {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
 .offset_right {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
   transform: translateX(100%);
 }
 
 .delay_0 {
+  -webkit-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
   transition-delay: 0ms;
 }
 
 .delay_1 {
+  -webkit-transition-delay: 125ms;
+  -o-transition-delay: 125ms;
   transition-delay: 125ms;
 }
 
 .delay_2 {
+  -webkit-transition-delay: 250ms;
+  -o-transition-delay: 250ms;
   transition-delay: 250ms;
 }
 
 .delay_3 {
+  -webkit-transition-delay: 375ms;
+  -o-transition-delay: 375ms;
   transition-delay: 375ms;
 }
 
 .delay_4 {
+  -webkit-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
   transition-delay: 500ms;
 }
 
 .delay_5 {
+  -webkit-transition-delay: 615ms;
+  -o-transition-delay: 615ms;
   transition-delay: 615ms;
 }
