@@ -65,7 +65,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 | **start**               | Defines a percentage from the bottom of the screen that the "scroll journey" should be calculated from. (e.g., 0.3 for 30% from the bottom).  | `number`                 |
 | **end**                 | Defines a percentage from the top of the screen that the "scroll journey" should be calculated from. (e.g., 0.3 for 30% from the top).        | `number`                 |
 | **onScroll**            | A callback to handle the percentage that the elements midpoint has traveled between the start and end points.                                 | `(n: number) => void;`   |
-| **children** *optional* | The children to be observed.                                                     			                              	          | `ReactNode | undefined`  |
+| **children** *optional* | The children to be observed.                                                     			                              	                  | `ReactNode \| undefined` |
 
 
 ### `Flex`
@@ -75,12 +75,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - The `justify` and `align` values determine the positioning of the elements within the layout by setting `justify-content` and `align-items` respectively.
 - Sets the container width to full screen and limits the content width within it with `max-width: 1200px;`
 
-| Prop                    | Description                                                              | Type                    |
-|-------------------------|--------------------------------------------------------------------------|-------------------------|
-| **direction**           | Specifies the flex direction.                                            | `FlexDirection`         |
-| **justify** *optional*  | Controls the alignment of items along the main axis. (default: `start`)  | `JustifyContent`        |
-| **align** *optional*    | Controls the alignment of items along the cross axis. (default: `start`) | `AlignBasic`            |
-| **children** *optional* | The children to be observed.                                             | `ReactNode | undefined` |
+| Prop                    | Description                                                              | Type                     |
+|-------------------------|--------------------------------------------------------------------------|--------------------------|
+| **direction**           | Specifies the flex direction.                                            | `FlexDirection`          |
+| **justify** *optional*  | Controls the alignment of items along the main axis. (default: `start`)  | `JustifyContent`         |
+| **align** *optional*    | Controls the alignment of items along the cross axis. (default: `start`) | `AlignBasic`             |
+| **children** *optional* | The children to be observed.                                             | `ReactNode \| undefined` |
 
 
 ### `Grid`
@@ -90,12 +90,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - The `justify` and `align` values determine the positioning of the elements within the layout by setting `justify-items` and `align-items` respectively.
 - Sets the container width to full screen and limits the content width within it with `max-width: 1200px;`
 
-| Prop                    | Description                                                                    | Type                     |
-|-------------------------|--------------------------------------------------------------------------------|--------------------------|
-| **columns**             | Specifies the number of grid columns                                           | `FlexDirection`          |
-| **justify** *optional*  | Controls the alignment of grid items along the inline axis. (default: `start`) | `AlignBasic`             |
-| **align** *optional*    | Controls the alignment of grid items along the block axis. (default: `start`)  | `AlignBasic`             |
-| **children** *optional* | The children to be observed.                                                   | `ReactNode | undefined`  |
+| Prop                    | Description                                                                    | Type                      |
+|-------------------------|--------------------------------------------------------------------------------|---------------------------|
+| **columns**             | Specifies the number of grid columns                                           | `FlexDirection`           |
+| **justify** *optional*  | Controls the alignment of grid items along the inline axis. (default: `start`) | `AlignBasic`              |
+| **align** *optional*    | Controls the alignment of grid items along the block axis. (default: `start`)  | `AlignBasic`              |
+| **children** *optional* | The children to be observed.                                                   | `ReactNode \| undefined`  |
 
 
 ### `Fade`
@@ -105,12 +105,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - Allows you to specify the if the transition occurs on exit as well as entry.
 - Uses `'use client'` directive, making it suitable for client-side interactions.
 
-| Prop                    | Description                                                                                       | Type                    |
-|-------------------------|---------------------------------------------------------------------------------------------------|-------------------------|
-| **speed** *optional*    | Specifies the transition speed using predefined values. (default: `"med"`)                        | `TransitionSpeed`       |
-| **delay** *optional*    | Specifies the delay before the transition starts using predefined values. (default: `0`)          | `TransitionDelay`       |
-| **onExit** *optional*   | Specifies if an element will "fade out" when the component exits the viewport. (default: `false`) | `boolean`               |
-| **children** *optional* | The children to be observed.                                                                      | `ReactNode | undefined` |
+| Prop                    | Description                                                                                       | Type                     |
+|-------------------------|---------------------------------------------------------------------------------------------------|--------------------------|
+| **speed** *optional*    | Specifies the transition speed using predefined values. (default: `"med"`)                        | `TransitionSpeed`        |
+| **delay** *optional*    | Specifies the delay before the transition starts using predefined values. (default: `0`)          | `TransitionDelay`        |
+| **onExit** *optional*   | Specifies if an element will "fade out" when the component exits the viewport. (default: `false`) | `boolean`                |
+| **children** *optional* | The children to be observed.                                                                      | `ReactNode \| undefined` |
 
 
 ### `HorizontalSwipe`
@@ -119,12 +119,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - Allows you to specify the transition speed and delay to create smooth staggered effects.
 - Uses `'use client'` directive, making it suitable for client-side interactions.
 
-| Prop                     | Description                                                                                                | Type                    |
-|--------------------------|------------------------------------------------------------------------------------------------------------|-------------------------|
-| **animation** *optional* | Specifies the combinations of directions the elements will enter and leave the screen from. (default: `1`) | `1 | 2 | 3 | 4`         |
-| **speed** *optional*     | Specifies the transition speed using predefined values. (default: `"med"`)                                 | `TransitionSpeed`       |
-| **delay** *optional*     | Specifies the delay before the transition starts using predefined values. (default: `0`)                   | `TransitionDelay`       |
-| **children** *optional*  | The children to be observed.                                                                               | `ReactNode | undefined` |
+| Prop                     | Description                                                                                                | Type                     |
+|--------------------------|------------------------------------------------------------------------------------------------------------|--------------------------|
+| **animation** *optional* | Specifies the combinations of directions the elements will enter and leave the screen from. (default: `1`) | `1 | 2 | 3 | 4`          |
+| **speed** *optional*     | Specifies the transition speed using predefined values. (default: `"med"`)                                 | `TransitionSpeed`        |
+| **delay** *optional*     | Specifies the delay before the transition starts using predefined values. (default: `0`)                   | `TransitionDelay`        |
+| **children** *optional*  | The children to be observed.                                                                               | `ReactNode \| undefined` |
 
 
 ### `VerticalSwipe`
@@ -134,23 +134,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - Allows you to specify the transition speed and delay to create smooth staggered effects.
 - Uses `'use client'` directive, making it suitable for client-side interactions.
 
-| Prop                     | Description                                                                                                | Type                    |
-|--------------------------|------------------------------------------------------------------------------------------------------------|-------------------------|
-| **speed** *optional*     | Specifies the transition speed using predefined values. (default: `"med"`)                                 | `TransitionSpeed`       |
-| **delay** *optional*     | Specifies the delay before the transition starts using predefined values. (default: `0`)                   | `TransitionDelay`       |
-| **children** *optional*  | The children to be observed.                                                                               | `ReactNode | undefined` |
+| Prop                     | Description                                                                                                | Type                     |
+|--------------------------|------------------------------------------------------------------------------------------------------------|--------------------------|
+| **speed** *optional*     | Specifies the transition speed using predefined values. (default: `"med"`)                                 | `TransitionSpeed`        |
+| **delay** *optional*     | Specifies the delay before the transition starts using predefined values. (default: `0`)                   | `TransitionDelay`        |
+| **children** *optional*  | The children to be observed.                                                                               | `ReactNode \| undefined` |
 
 
 ## Types
-| Name              | Type                                           |
-|-------------------|------------------------------------------------|
-| YDirection        | `"top" | "bottom"`                             |
-| XDirection        | `"left" | "right"`                             |
-| Axis              | `"x" | "y"`                                    |
-| FlexDirection     | `"row" | "col"`                                |
-| AlignBasic        | `"start" | "center" | "end"`                   |
-| JustifyContent    | `AlignBasic | "between" | "around" | "evenly"` |
-| TransitionSpeed   | `"med" | "fast" | "x_fast"`                    |
-| TransitionDelay   | `0 | 1 | 2 | 3 | 4 | 5`                        |
-| CSSModule         | `{readonly [key: string]: string;}`            |
-| AnimationCallback | `(e: Element, d: YDirection) => void`          |
+| Name              | Type                                              |
+|-------------------|---------------------------------------------------|
+| YDirection        | `"top" \| "bottom"`                               |
+| XDirection        | `"left" \| "right"`                               |
+| Axis              | `"x" \| "y"`                                      |
+| FlexDirection     | `"row" \| "col"`                                  |
+| AlignBasic        | `"start" \| "center" \| "end"`                    |
+| JustifyContent    | `AlignBasic \| "between" \| "around" \| "evenly"` |
+| TransitionSpeed   | `"med" \| "fast" \| "x_fast"`                     |
+| TransitionDelay   | `0 \| 1 \| 2 \| 3 \| 4 \| 5`                      |
+| CSSModule         | `{readonly [key: string]: string;}`               |
+| AnimationCallback | `(e: Element, d: YDirection) => void`             |
