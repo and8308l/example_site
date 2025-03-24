@@ -1,3 +1,5 @@
+'use client'
+
 import { YDirection } from "@/constants/types";
 import React, {
   Children,
@@ -42,7 +44,7 @@ export default function Observer({
       },
       {
         threshold: threshold,
-        rootMargin: "-60px 100% 0px 100%",
+        rootMargin: "-80px 100% 0px 100%",
       }
     );
 

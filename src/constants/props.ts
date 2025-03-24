@@ -1,18 +1,23 @@
 import { PropsWithChildren } from "react";
-import { FlexDirection, TransitionDelay, TransitionSpeed } from "./types";
+import {
+  AlignBasic,
+  FlexDirection,
+  JustifyContent,
+  TransitionDelay,
+  TransitionSpeed,
+} from "./types";
 
 // layout wrapper props
-export interface LayoutProps extends PropsWithChildren {
-  justify?: "start" | "center" | "end" | "between" | "around" | "evenly";
-  align?: "start" | "center" | "end";
-}
-
-export interface GridProps extends LayoutProps {
+export interface GridProps extends PropsWithChildren {
   columns: number;
+  justify?: AlignBasic;
+  align?: AlignBasic;
 }
 
-export interface FlexProps extends LayoutProps {
+export interface FlexProps extends PropsWithChildren {
   direction: FlexDirection;
+  justify?: JustifyContent;
+  align?: AlignBasic;
 }
 
 // animated wrapper props

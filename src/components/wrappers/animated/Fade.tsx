@@ -8,7 +8,7 @@ import Observer from "../listeners/Observer";
 export default function Fade({
   speed = "med",
   delay = 0,
-  onExit,
+  onExit = false,
   children,
 }: FadeProps) {
   return (
