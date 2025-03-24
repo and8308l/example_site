@@ -17,13 +17,13 @@ export default function Home() {
           <div>
             <Heading>Lorem ipsum imperdiet dolor</Heading>
             <HorizontalSwipe animation={1}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
           </div>
           <div>
             <Heading>Lorem ipsum imperdiet dolor</Heading>
             <HorizontalSwipe animation={3}>
-              <Tile image="/images/ferns.jpg" />
+              <Tile image="/images/ferns.webp" />
             </HorizontalSwipe>
           </div>
         </Grid>
@@ -46,15 +46,15 @@ export default function Home() {
         <Grid columns={3}>
           <VerticalSwipe>
             <Heading size="sml">Lorem ipsum imperdiet dolor</Heading>
-            <Tile image="/images/ferns.jpg" />
+            <Tile image="/images/ferns.webp" />
           </VerticalSwipe>
           <VerticalSwipe delay={1}>
             <Heading size="sml">Lorem ipsum imperdiet dolor</Heading>
-            <Tile image="/images/ferns.jpg" />
+            <Tile image="/images/ferns.webp" />
           </VerticalSwipe>
           <VerticalSwipe delay={2}>
             <Heading size="sml">Lorem ipsum imperdiet dolor</Heading>
-            <Tile image="/images/ferns.jpg" />
+            <Tile image="/images/ferns.webp" />
           </VerticalSwipe>
         </Grid>
       </section>
@@ -86,32 +86,32 @@ export default function Home() {
         <div className="py-5">
           <Grid columns={4}>
             <HorizontalSwipe animation={4}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
             <HorizontalSwipe animation={4} delay={1}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
             <HorizontalSwipe animation={4} delay={2}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
             <HorizontalSwipe animation={4} delay={3}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
           </Grid>
         </div>
         <div className="py-5">
           <Grid columns={4}>
             <HorizontalSwipe animation={2} delay={3}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
             <HorizontalSwipe animation={2} delay={2}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
             <HorizontalSwipe animation={2} delay={1}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
             <HorizontalSwipe animation={2}>
-              <Tile image="/images/barn.jpg" />
+              <Tile image="/images/barn.webp" />
             </HorizontalSwipe>
           </Grid>
         </div>

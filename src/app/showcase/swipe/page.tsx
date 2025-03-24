@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Swipe",
 };
 
-const imageSrc = "/images/ferns.jpg";
+const imageSrc = "/images/ferns.webp";
 export default function page() {
   return (
     <main>

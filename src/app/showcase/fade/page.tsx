@@ -4,7 +4,7 @@ import Fade from "@/components/wrappers/animated/Fade";
 import { Metadata } from "next";
 import React from "react";
 
-const imageSrc = "/images/barn.jpg";
+const imageSrc = "/images/barn.webp";
 
 export const metadata: Metadata = {
   title: "Fade",
