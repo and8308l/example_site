@@ -121,7 +121,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 | Prop                     | Description                                                                                                | Type                     |
 |--------------------------|------------------------------------------------------------------------------------------------------------|--------------------------|
-| **animation** *optional* | Specifies the combinations of directions the elements will enter and leave the screen from. (default: `1`) | `1 | 2 | 3 | 4`          |
+| **animation** *optional* | Specifies the combinations of directions the elements will enter and leave the screen from. (default: `1`) | `1 \| 2 \| 3 \| 4`       |
 | **speed** *optional*     | Specifies the transition speed using predefined values. (default: `"med"`)                                 | `TransitionSpeed`        |
 | **delay** *optional*     | Specifies the delay before the transition starts using predefined values. (default: `0`)                   | `TransitionDelay`        |
 | **children** *optional*  | The children to be observed.                                                                               | `ReactNode \| undefined` |
