@@ -2,7 +2,6 @@ import Tile from "@/components/ui/feature/tile/Tile";
 import Heading from "@/components/ui/typography/Heading";
 import HorizontalSwipe from "@/components/wrappers/animated/HorizontalSwipe";
 import VerticalSwipe from "@/components/wrappers/animated/VerticalSwipe";
-import Flex from "@/components/wrappers/layout/Flex";
 import Grid from "@/components/wrappers/layout/Grid";
 
 export default function Home() {
