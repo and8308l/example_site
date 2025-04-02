@@ -1,16 +1,33 @@
 import Tile from "@/components/ui/feature/tile/Tile";
+import BodyCopy from "@/components/ui/typography/BodyCopy";
 import Heading from "@/components/ui/typography/Heading";
 import HorizontalSwipe from "@/components/wrappers/animated/HorizontalSwipe";
 import VerticalSwipe from "@/components/wrappers/animated/VerticalSwipe";
+import Flex from "@/components/wrappers/layout/Flex";
 import Grid from "@/components/wrappers/layout/Grid";
 
 export default function Home() {
   return (
     <>
       <section className="w-screen h-screen flex justify-center">
-        <div className="flex flex-col justify-center">
+        <Flex
+          direction="col"
+          justify="center"
+          align="center"
+          className="h-screen"
+        >
           <Heading size="lrg">Example Heading</Heading>
-        </div>
+          <BodyCopy>
+            This website serves as a dynamic showcase for a collection of
+            custom-built components, designed to illustrate their functionality
+            and versatility. It's intended as a living portfolio, where new
+            components will be added over time, reflecting evolving needs and
+            expanding capabilities.
+          </BodyCopy>
+        </Flex>
+        {/* <div className="flex flex-col justify-center">
+      
+        </div> */}
       </section>
       <section className="py-9 min-h-screen">
         <Grid columns={2}>
