@@ -2,6 +2,7 @@ import Grid from "@/components/wrappers/layout/Grid";
 import React, { cloneElement, ReactElement } from "react";
 import Tile from "../feature/tile/Tile";
 import Heading from "../typography/Heading";
+import BodyCopy from "../typography/BodyCopy";
 
 export default function FeatureDisplay({
   title,
@@ -33,9 +34,9 @@ export default function FeatureDisplay({
         {featureValues.map((feature, i) => {
           return (
             <div key={i}>
-              <p className="mb-5">
+              <BodyCopy size="sml">
                 <strong>Value:</strong> {feature}
-              </p>
+              </BodyCopy>
               {cloneElement(
                 featureComponent(),
                 { [featureName]: feature },

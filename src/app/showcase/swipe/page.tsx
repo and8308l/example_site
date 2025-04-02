@@ -1,5 +1,6 @@
 import FeatureDisplay from "@/components/ui/layout/FeatureDisplay";
 import TitleDisplay from "@/components/ui/layout/TitleDisplay";
+import BodyCopy from "@/components/ui/typography/BodyCopy";
 import HorizontalSwipe from "@/components/wrappers/animated/HorizontalSwipe";
 import VerticalSwipe from "@/components/wrappers/animated/VerticalSwipe";
 import { Metadata } from "next";
@@ -14,26 +15,38 @@ export default function page() {
   return (
     <main>
       <TitleDisplay title={metadata.title as string}>
-        <p>
+        <BodyCopy>
           The following examples showcase the two Swipe wrappers which utilises
           an IntersectionObserver to detect a child elements entry and exit of
           the screen.
-        </p>
-        <p>
+        </BodyCopy>
+        <BodyCopy>
           The custom props for both wrappers vary the transition speed & delay.
-        </p>
-        <p>
+        </BodyCopy>
+        <BodyCopy>
           An extra custom prop exists for HorizontalSwipe altering the type of
           animation.
-        </p>
+        </BodyCopy>
         <ul className="list-disc">
-          <li>Animation 1 enters and leave from the left side.</li>
           <li>
-            Animation 2 enters from the left side and leaves via the right.
+            <BodyCopy>
+              Animation 1 enters and leave from the left side.
+            </BodyCopy>
           </li>
-          <li>Animation 3 enters and leave from the right side.</li>
           <li>
-            Animation 4 enters from the right side and leaves via the left.
+            <BodyCopy>
+              Animation 2 enters from the left side and leaves via the right.
+            </BodyCopy>
+          </li>
+          <li>
+            <BodyCopy>
+              Animation 3 enters and leave from the right side.
+            </BodyCopy>
+          </li>
+          <li>
+            <BodyCopy>
+              Animation 4 enters from the right side and leaves via the left.
+            </BodyCopy>
           </li>
         </ul>
       </TitleDisplay>

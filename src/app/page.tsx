@@ -45,7 +45,7 @@ export default function Home() {
       <section className="py-9">
         <Grid columns={2}>
           <Heading>Lorem ipsum imperdiet dolor</Heading>
-          <p>
+          <BodyCopy>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -53,7 +53,7 @@ export default function Home() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          </BodyCopy>
         </Grid>
       </section>
       <section className="py-9 min-h-screen">
@@ -77,7 +77,7 @@ export default function Home() {
           <Heading>Lorem ipsum imperdiet dolor</Heading>
         </Grid>
         <Grid columns={2}>
-          <p>
+          <BodyCopy>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -85,15 +85,15 @@ export default function Home() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
+          </BodyCopy>
+          <BodyCopy>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
             Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
             aliquet nec, vulputate eget, arcu.
-          </p>
+          </BodyCopy>
         </Grid>
       </section>
       <section className="py-9">
