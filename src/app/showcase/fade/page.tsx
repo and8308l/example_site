@@ -1,5 +1,6 @@
 import FeatureDisplay from "@/components/ui/layout/FeatureDisplay";
 import TitleDisplay from "@/components/ui/layout/TitleDisplay";
+import BodyCopy from "@/components/ui/typography/BodyCopy";
 import Fade from "@/components/wrappers/animated/Fade";
 import { Metadata } from "next";
 import React from "react";
@@ -14,15 +15,15 @@ export default function page() {
   return (
     <main>
       <TitleDisplay title={metadata.title as string}>
-        <p>
+        <BodyCopy>
           The following examples showcase the Fade wrapper which utilises an
           IntersectionObserver to detect a child elements entry and exit of the
           screen.
-        </p>
-        <p>
+        </BodyCopy>
+        <BodyCopy>
           The custom props vary the transition speed, delay & if the transition
           also occurs on screen exit.
-        </p>
+        </BodyCopy>
       </TitleDisplay>
       <FeatureDisplay
         title={`Fade wrapper with prop "speed"`}

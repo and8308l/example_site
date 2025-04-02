@@ -6,6 +6,7 @@ export default function Flex({
   direction,
   justify = "start",
   align = "start",
+  className,
   children,
 }: FlexProps) {
   return (
@@ -22,7 +23,7 @@ export default function Flex({
           (align == "start" && "items-start") ||
           (align == "center" && "items-center") ||
           (align == "end" && "items-end")
-        } ${styles.limit_width}`}
+        } ${styles.limit_width} ${className}`}
       >
         {children}
       </div>

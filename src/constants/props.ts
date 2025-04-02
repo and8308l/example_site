@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import {
   AlignBasic,
+  CSSModule,
   FlexDirection,
   JustifyContent,
   TransitionDelay,
@@ -12,12 +13,14 @@ export interface GridProps extends PropsWithChildren {
   columns: number;
   justify?: AlignBasic;
   align?: AlignBasic;
+  className?: string;
 }
 
 export interface FlexProps extends PropsWithChildren {
   direction: FlexDirection;
   justify?: JustifyContent;
   align?: AlignBasic;
+  className?: string;
 }
 
 // animated wrapper props
@@ -32,4 +35,8 @@ export interface HorzontalSwipeProps extends TransitionProps {
 export interface TransitionProps extends PropsWithChildren {
   speed?: TransitionSpeed;
   delay?: TransitionDelay;
+}
+
+export interface TypographyProps extends PropsWithChildren {
+  size?: "sml" | "med" | "lrg";
 }

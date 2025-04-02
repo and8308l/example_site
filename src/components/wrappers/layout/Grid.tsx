@@ -6,6 +6,7 @@ export default function Grid({
   columns,
   justify = "start",
   align = "start",
+  className,
   children,
 }: GridProps) {
   return (
@@ -21,7 +22,7 @@ export default function Grid({
           (align == "center" && "items-center") ||
           (align == "end" && "items-end") ||
           ""
-        } ${styles.limit_width}`}
+        } ${styles.limit_width} ${className}`}
         style={{ ["--columns" as string]: columns }}
       >
         {children}

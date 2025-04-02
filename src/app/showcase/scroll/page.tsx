@@ -3,6 +3,7 @@ import Circles from "@/components/ui/decorative/circles/Circles";
 import Spirograph from "@/components/ui/decorative/spirograph/Spirograph";
 import DescriptionDisplay from "@/components/ui/layout/DescriptionDisplay";
 import TitleDisplay from "@/components/ui/layout/TitleDisplay";
+import BodyCopy from "@/components/ui/typography/BodyCopy";
 import { Metadata } from "next";
 import React from "react";
 
@@ -14,17 +15,17 @@ export default function page() {
   return (
     <main>
       <TitleDisplay title={metadata.title as string}>
-        <p>
+        <BodyCopy>
           The following examples showcase the ScrollListener wrapper which
           calculates the midpoint of its child element and it&apos;s position
           within the defined window region. The scroll listener is only firing
           when the element is &quot;on screen&quot; by utilising the
           IntersectionObserver.
-        </p>
-        <p>
+        </BodyCopy>
+        <BodyCopy>
           For each of these examples, the designed element can be interchangable
           and altered. This is simply to highlight the principle.
-        </p>
+        </BodyCopy>
       </TitleDisplay>
       <DescriptionDisplay
         description="This element starts its transition 15% from the bottom edge of the screen & completes it's transition at 50% of the screen height."

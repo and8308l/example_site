@@ -1,13 +1,13 @@
 import React, { PropsWithChildren } from "react";
 import styles from "./typography.module.css";
+import { TypographyProps } from "@/constants/props";
 
-export default function Heading({
-  size = "med",
-  children,
-}: {
-  size?: "sml" | "med" | "lrg";
-} & PropsWithChildren) {
+export default function Heading({ size = "med", children }: TypographyProps) {
   return (
-    <h2 className={`${styles.heading} ${styles[`heading_${size}`]} text-balance`}>{children}</h2>
+    <h2
+      className={`${styles.heading} ${styles[`heading_${size}`]} text-balance`}
+    >
+      {children}
+    </h2>
   );
 }
