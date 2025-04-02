@@ -16,6 +16,23 @@
   font-size: 3.75rem;
 }
 
+.body_copy {
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.body_copy_sml {
+  font-size: 0.8rem;
+}
+
+.body_copy_med {
+  font-size: 1.1rem;
+}
+
+.body_copy_lrg {
+  font-size: 1.3rem;
+}
+
 @media (min-width: 768px) {
   .heading_sml {
     font-size: 2.25rem;
@@ -27,5 +44,17 @@
 
   .heading_lrg {
     font-size: 6rem;
+  }
+
+  .body_copy_sml {
+    font-size: 0.95rem;
+  }
+
+  .body_copy_med {
+    font-size: 1.2rem;
+  }
+
+  .body_copy_lrg {
+    font-size: 1.5rem;
   }
 }

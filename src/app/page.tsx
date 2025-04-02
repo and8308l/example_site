@@ -17,7 +17,7 @@ export default function Home() {
           className="h-screen"
         >
           <Heading size="lrg">Example Heading</Heading>
-          <BodyCopy>
+          <BodyCopy size="lrg">
             This website serves as a dynamic showcase for a collection of
             custom-built components, designed to illustrate their functionality
             and versatility. It's intended as a living portfolio, where new
@@ -25,9 +25,6 @@ export default function Home() {
             expanding capabilities.
           </BodyCopy>
         </Flex>
-        {/* <div className="flex flex-col justify-center">
-      
-        </div> */}
       </section>
       <section className="py-9 min-h-screen">
         <Grid columns={2}>
