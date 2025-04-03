@@ -75,12 +75,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - The `justify` and `align` values determine the positioning of the elements within the layout by setting `justify-content` and `align-items` respectively.
 - Sets the container width to full screen and limits the content width within it with `max-width: 1200px;`
 
-| Prop                    | Description                                                              | Type                     |
-|-------------------------|--------------------------------------------------------------------------|--------------------------|
-| **direction**           | Specifies the flex direction.                                            | `FlexDirection`          |
-| **justify** *optional*  | Controls the alignment of items along the main axis. (default: `start`)  | `JustifyContent`         |
-| **align** *optional*    | Controls the alignment of items along the cross axis. (default: `start`) | `AlignBasic`             |
-| **children** *optional* | The children to be observed.                                             | `ReactNode \| undefined` |
+| Prop                     | Description                                                              | Type                     |
+|--------------------------|--------------------------------------------------------------------------|--------------------------|
+| **direction**            | Specifies the flex direction.                                            | `FlexDirection`          |
+| **justify** *optional*   | Controls the alignment of items along the main axis. (default: `start`)  | `JustifyContent`         |
+| **align** *optional*     | Controls the alignment of items along the cross axis. (default: `start`) | `AlignBasic`             |
+| **className** *optional* | Additional classes added to the Flex Container                           | `string`                 |
+| **children** *optional*  | The children to be observed.                                             | `ReactNode \| undefined` |
 
 
 ### `Grid`
@@ -90,12 +91,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - The `justify` and `align` values determine the positioning of the elements within the layout by setting `justify-items` and `align-items` respectively.
 - Sets the container width to full screen and limits the content width within it with `max-width: 1200px;`
 
-| Prop                    | Description                                                                    | Type                      |
-|-------------------------|--------------------------------------------------------------------------------|---------------------------|
-| **columns**             | Specifies the number of grid columns                                           | `FlexDirection`           |
-| **justify** *optional*  | Controls the alignment of grid items along the inline axis. (default: `start`) | `AlignBasic`              |
-| **align** *optional*    | Controls the alignment of grid items along the block axis. (default: `start`)  | `AlignBasic`              |
-| **children** *optional* | The children to be observed.                                                   | `ReactNode \| undefined`  |
+| Prop                     | Description                                                                    | Type                      |
+|--------------------------|--------------------------------------------------------------------------------|---------------------------|
+| **columns**              | Specifies the number of grid columns                                           | `FlexDirection`           |
+| **justify** *optional*   | Controls the alignment of grid items along the inline axis. (default: `start`) | `AlignBasic`              |
+| **align** *optional*     | Controls the alignment of grid items along the block axis. (default: `start`)  | `AlignBasic`              |
+| **className** *optional* | Additional classes added to the Grid Container                                 | `string`                  |
+| **children** *optional*  | The children to be observed.                                                   | `ReactNode \| undefined`  |
 
 
 ### `Fade`
