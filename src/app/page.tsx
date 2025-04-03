@@ -19,10 +19,15 @@ export default function Home() {
           <Heading size="lrg">Example Heading</Heading>
           <BodyCopy size="lrg">
             This website serves as a dynamic showcase for a collection of
-            custom-built components, designed to illustrate their functionality
-            and versatility. It's intended as a living portfolio, where new
-            components will be added over time, reflecting evolving needs and
-            expanding capabilities.
+            custom-built components, designed to illustrate their functionality,
+            simplicity where appropriate and versatility if needed. It's
+            intended as a living portfolio, where new components will be added
+            over time, reflecting evolving needs and expanding capabilities.
+          </BodyCopy>
+          <BodyCopy>
+            The following placeholder content is intended as a very basic
+            example of how these compontents could be used to create some visual
+            interest with what might usually be slightly plain design elements.
           </BodyCopy>
         </Flex>
       </section>
@@ -130,7 +135,18 @@ export default function Home() {
           </Grid>
         </div>
       </section>
-      <div className="h-screen"></div>
+      <section className="w-screen h-screen flex justify-center">
+        <Flex
+          direction="col"
+          justify="center"
+          align="center"
+          className="h-screen"
+        >
+          <BodyCopy>
+            Explore the pages in the menu to see these components in more detail to see each variation of customisation in action.
+          </BodyCopy>
+        </Flex>
+      </section>
     </>
   );
 }
