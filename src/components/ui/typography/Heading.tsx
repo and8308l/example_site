@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import styles from "./typography.module.css";
 import { TypographyProps } from "@/constants/props";
 

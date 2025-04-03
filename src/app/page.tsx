@@ -20,7 +20,7 @@ export default function Home() {
           <BodyCopy size="lrg">
             This website serves as a dynamic showcase for a collection of
             custom-built components, designed to illustrate their functionality,
-            simplicity where appropriate and versatility if needed. It's
+            simplicity where appropriate and versatility if needed. It&#39;s
             intended as a living portfolio, where new components will be added
             over time, reflecting evolving needs and expanding capabilities.
           </BodyCopy>
