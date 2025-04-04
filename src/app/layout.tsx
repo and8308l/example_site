@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Example Site",
     default: "Example Site",
   },
-  description: "",
+  description: "An example site showcasing custom some custom components.",
   robots: {
     index: false,
     follow: false,
