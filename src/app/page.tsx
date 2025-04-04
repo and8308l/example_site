@@ -16,7 +16,7 @@ export default function Home() {
           align="center"
           className="h-screen"
         >
-          <Heading size="lrg">Example Heading</Heading>
+          <Heading size="lrg" h1>Example Heading</Heading>
           <BodyCopy size="lrg">
             This website serves as a dynamic showcase for a collection of
             custom-built components, designed to illustrate their functionality,

@@ -36,6 +36,10 @@ export interface TransitionProps extends PropsWithChildren {
   delay?: TransitionDelay;
 }
 
+export interface HeadingProps extends TypographyProps {
+  h1?: boolean;
+}
+
 export interface TypographyProps extends PropsWithChildren {
   size?: "sml" | "med" | "lrg";
 }
