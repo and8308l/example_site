@@ -4,6 +4,7 @@ import styles from "./bar.module.css";
 import ScrollListener from "@/components/wrappers/listeners/ScrollListener";
 import { Axis } from "@/constants/types";
 
+// Props in this component have been written within the file as they are only here for temporary demonstration purposes
 export default function Bar({ axis }: { axis: Axis }) {
   const [progress, setProgress] = useState(0);
 

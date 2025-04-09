@@ -5,11 +5,12 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import styles from "./navbar.module.css";
 import Flex from "@/components/wrappers/layout/Flex";
-export default function Navbar({
-  items,
-}: {
+
+interface NavbarProps {
   items: Array<{ path: string; label: string }>;
-}) {
+}
+
+export default function Navbar({ items }: NavbarProps) {
   const pathname = usePathname();
   return (
     <nav className={styles.wrapper}>

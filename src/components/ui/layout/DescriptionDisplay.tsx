@@ -2,6 +2,7 @@ import Grid from "@/components/wrappers/layout/Grid";
 import React, { cloneElement, ReactElement } from "react";
 import BodyCopy from "../typography/BodyCopy";
 
+// Props in this component have been written within the file as they are only here for temporary demonstration purposes
 export default function DescriptionDisplay({
   description,
   featureComponent,

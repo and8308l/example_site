@@ -36,6 +36,7 @@ export interface TransitionProps extends PropsWithChildren {
   delay?: TransitionDelay;
 }
 
+// typogrophy component props
 export interface HeadingProps extends TypographyProps {
   h1?: boolean;
 }
